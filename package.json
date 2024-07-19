@@ -5,7 +5,8 @@
     "scripts": {
         "client": "cd client && yarn start",
         "server": "nodemon server.js",
-        "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+        "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+        "start": "node server.js"
     },
     "dependencies": {
         "body-parser": "^1.18.3",
@@ -15,5 +16,9 @@
     },
     "devDependencies": {
         "concurrently": "^4.0.1"
-    }
+    },
+    "main": "server.js",
+    "author": "",
+    "license": "ISC",
+    "description": ""
 }
